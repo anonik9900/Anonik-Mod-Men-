@@ -1,0 +1,31 @@
+void draw_menu_line(std::string caption, float lineWidth, float lineHeight, float lineTop, float lineLeft, float textLeft, bool active, bool title, bool rescaleText = true)
+{
+	// default values
+	int text_col[4] = {255, 255, 255, 190},
+		rect_col[4] = {0, 0, 0, 190};
+	float text_scale = 0.35;
+	int font = 7;
+
+	// correcting values for active line
+	if (active)
+	{
+		text_col[0] = 0;
+		text_col[1] = 0;
+		text_col[2] = 0; //scrolling
+
+		rect_col[0] = 0;
+		rect_col[1] = 255;
+		rect_col[2] = 0;
+
+		if (rescaleText) text_scale = 0.40;
+	}
+
+	if (title) //titolo
+	{
+		rect_col[0] = 0;
+		rect_col[1] = 255;
+		rect_col[2] = 0;
+
+		if (rescaleText) text_scale = 0.50;
+		font = 4;
+	}

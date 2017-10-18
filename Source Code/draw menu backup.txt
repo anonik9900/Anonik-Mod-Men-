@@ -1,0 +1,6 @@
+char caption[32];
+			sprintf_s(caption, "SKIN CHANGER   %d / %d", skinchangerActiveLineIndex + 1, lineCount);
+			draw_menu_line(caption, 350.0, 15.0, 18.0, 0.0, 5.0, false, true);
+			for (int i = 0; i < itemCount; i++)
+				if (strlen(pedModels[skinchangerActiveLineIndex][i]) || strcmp(pedModelNames[skinchangerActiveLineIndex][i], "NONE") == 0)
+					draw_menu_line(pedModelNames[skinchangerActiveLineIndex][i], 100.0f, 5.0f, 200.0f, 100.0f + i * 110.0f, 5.0f, i == skinchangerActiveItemIndex, false, false);

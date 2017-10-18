@@ -1,0 +1,8 @@
+// draw menu
+			draw_menu_line(caption, lineWidth, 7.0, 13.6, 5.0, 5.0, false, true);
+			for (int i = 0; i < lineCount; i++)
+				if (i != activeLineIndexWeather)
+					draw_menu_line(line_as_str(lines[i].text, lines[i].pState),
+						lineWidth, 12.0, 60.0 + i * 36.0, 0.0, 9.0, false, false);
+			draw_menu_line(line_as_str(lines[activeLineIndexWeather].text, lines[activeLineIndexWeather].pState),
+				lineWidth + 1.0, 12.0, 60.0 + activeLineIndexWeather * 36.0, 0.0, 9.0, true, false);

@@ -1,0 +1,9 @@
+﻿  script.cpp
+script.cpp(45): warning C4838: la conversione da 'float' a 'int' richiede una conversione verso un tipo di dati più piccolo
+script.cpp(46): warning C4838: la conversione da 'float' a 'int' richiede una conversione verso un tipo di dati più piccolo
+  Generazione codice in corso...
+  24 of 342 functions ( 7.0%) were compiled, the rest were copied from previous compilation.
+    3 functions were new in current compilation
+    26 functions had inline decision re-evaluated but remain unchanged
+  Generazione codice terminata
+  NativeTrainer.vcxproj -> C:\Users\Nicholas Impieri\Documents\gta v backup\My Mod Menù\My Menù\samples\NativeTrainer\bin\Release\NativeTrainer.asi
